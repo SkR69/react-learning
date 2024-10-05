@@ -3,7 +3,7 @@ export default function Avatar({ imageDetails }) {
         <img
             src={imageDetails.url}
             alt={imageDetails.desc}
-            className="photo"
+            className={`photo ${imageDetails?.class}`}
             height={imageDetails.size}
             width={imageDetails.size}
         />
